@@ -1,0 +1,7 @@
+---
+- hosts: local
+  tasks:
+  - name: "create a new file"
+  file:
+    path: "/home/ansible/sample.txt"
+    state: touch
